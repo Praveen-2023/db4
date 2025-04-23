@@ -1,0 +1,5 @@
+Table: supplier
+Primary Key: supplier_id
+Schema: {'supplier_id': 'str', 'name': 'str', 'contact': 'str', 'email': 'str', 'address': 'str'}
+Number of rows: 0
+

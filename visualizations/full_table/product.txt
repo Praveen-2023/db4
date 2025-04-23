@@ -1,0 +1,5 @@
+Table: product
+Primary Key: product_id
+Schema: {'product_id': 'int', 'name': 'str', 'category': 'str', 'supplier_id': 'str', 'shop_id': 'str', 'price': 'float', 'stock_quantity': 'int', 'stock_status': 'str'}
+Number of rows: 0
+

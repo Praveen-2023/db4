@@ -1,0 +1,5 @@
+Table: order
+Primary Key: order_id
+Schema: {'order_id': 'int', 'customer_id': 'str', 'shop_id': 'str', 'order_date': 'str', 'total_amount': 'float', 'status': 'str'}
+Number of rows: 0
+

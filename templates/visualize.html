@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Visualize B+ Tree - Lightweight DBMS{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="mb-4">Visualize B+ Tree</h1>
+        <p class="lead">
+            Visualization of the B+ Tree structure.
+        </p>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2>Tables</h2>
+            </div>
+            <div class="card-body">
+                {% if tables %}
+                <div class="list-group">
+                    {% for table in tables %}
+                    <a href="{{ url_for('visualize_table', table_name=table) }}" class="list-group-item list-group-item-action">
+                        {{ table }}
+                    </a>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>No tables found. Please create tables first.</p>
+                <a href="{{ url_for('setup') }}" class="btn btn-primary">Setup Database</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2>Sample B+ Tree</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    This is a sample B+ Tree with 20 keys (1-20).
+                </p>
+                <pre class="bg-light p-3">{{ tree_text }}</pre>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

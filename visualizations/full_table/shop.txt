@@ -1,0 +1,5 @@
+Table: shop
+Primary Key: shop_id
+Schema: {'shop_id': 'str', 'name': 'str', 'address': 'str', 'contact': 'str', 'member_id': 'int'}
+Number of rows: 0
+

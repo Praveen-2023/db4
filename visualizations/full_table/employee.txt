@@ -1,0 +1,5 @@
+Table: employee
+Primary Key: employee_id
+Schema: {'employee_id': 'int', 'name': 'str', 'role': 'str', 'contact': 'str', 'shop_id': 'str', 'salary': 'float', 'salary_status': 'str'}
+Number of rows: 0
+

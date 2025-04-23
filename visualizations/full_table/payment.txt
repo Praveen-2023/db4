@@ -1,0 +1,5 @@
+Table: payment
+Primary Key: payment_id
+Schema: {'payment_id': 'int', 'order_id': 'int', 'amount': 'float', 'method': 'str', 'transaction_timestamp': 'str'}
+Number of rows: 0
+

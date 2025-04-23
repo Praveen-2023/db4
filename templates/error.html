@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Error - Lightweight DBMS{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="mb-4">Error</h1>
+        <div class="alert alert-danger">
+            {{ message }}
+        </div>
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}

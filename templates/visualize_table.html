@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Visualize {{ table_name }} B+ Tree - Lightweight DBMS{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="mb-4">Visualize {{ table_name }} B+ Tree</h1>
+        <div class="mb-3">
+            <a href="{{ url_for('visualize') }}" class="btn btn-secondary">Back to Visualization</a>
+            <a href="{{ url_for('view_table', table_name=table_name) }}" class="btn btn-primary">View Table</a>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>B+ Tree Structure</h2>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3">{{ tree_text }}</pre>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+Size,Structure,Operation,Time (s)
+10,B+ Tree,Delete,0.0
+10,B+ Tree,Mixed,0.0
+10,B+ Tree,Range Query,0.0
+10,B+ Tree,Search,0.0
+10,B+ Tree (Sorted),Insert,0.0003361701965332031
+10,B+ Tree (Unsorted),Insert,0.0
+10,Brute Force,Delete,0.0006805260976155599
+10,Brute Force,Insert,0.0
+10,Brute Force,Mixed,0.0
+10,Brute Force,Range Query,0.0
+10,Brute Force,Search,0.0
+15,B+ Tree,Delete,0.0006769498189290365
+15,B+ Tree,Mixed,0.0
+15,B+ Tree,Range Query,0.0
+15,B+ Tree,Search,0.0008715788523356119
+15,B+ Tree (Sorted),Insert,0.0010273456573486328
+15,B+ Tree (Unsorted),Insert,0.0
+15,Brute Force,Delete,0.0
+15,Brute Force,Insert,0.0
+15,Brute Force,Mixed,0.0
+15,Brute Force,Range Query,0.0
+15,Brute Force,Search,0.0
+20,B+ Tree,Delete,0.0006747245788574219
+20,B+ Tree,Mixed,0.0007528463999430338
+20,B+ Tree,Range Query,0.0
+20,B+ Tree,Search,0.0
+20,B+ Tree (Sorted),Insert,0.0
+20,B+ Tree (Unsorted),Insert,0.0
+20,Brute Force,Delete,0.0
+20,Brute Force,Insert,0.0
+20,Brute Force,Mixed,0.0
+20,Brute Force,Range Query,0.0
+20,Brute Force,Search,0.0
+100,B+ Tree,Delete,0.0
+100,B+ Tree,Mixed,0.00135040283203125
+100,B+ Tree,Range Query,0.0
+100,B+ Tree,Search,0.0006721814473470052
+100,B+ Tree (Sorted),Insert,0.0
+100,B+ Tree (Unsorted),Insert,0.0005909601847330729
+100,Brute Force,Delete,0.0
+100,Brute Force,Insert,0.0
+100,Brute Force,Mixed,0.0013438065846761067
+100,Brute Force,Range Query,0.00039776166280110675
+100,Brute Force,Search,0.0003439585367838542
+500,B+ Tree,Delete,0.0
+500,B+ Tree,Mixed,0.008400996526082357
+500,B+ Tree,Range Query,0.0
+500,B+ Tree,Search,0.0
+500,B+ Tree (Sorted),Insert,0.0022509098052978516
+500,B+ Tree (Unsorted),Insert,0.0008525053660074869
+500,Brute Force,Delete,0.0005866686503092448
+500,Brute Force,Insert,0.012423435846964518
+500,Brute Force,Mixed,0.01798407236735026
+500,Brute Force,Range Query,0.0
+500,Brute Force,Search,0.0006697972615559896
+1000,B+ Tree,Delete,0.0
+1000,B+ Tree,Mixed,0.03954482078552246
+1000,B+ Tree,Range Query,0.0006744066874186198
+1000,B+ Tree,Search,0.0
+1000,B+ Tree (Sorted),Insert,0.008812427520751953
+1000,B+ Tree (Unsorted),Insert,0.03136134147644043
+1000,Brute Force,Delete,0.0
+1000,Brute Force,Insert,0.052479823430379234
+1000,Brute Force,Mixed,0.0785049597422282
+1000,Brute Force,Range Query,0.0
+1000,Brute Force,Search,0.0023849010467529297

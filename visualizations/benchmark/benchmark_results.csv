@@ -1,0 +1,199 @@
+Size,Run,Structure,Operation,Time (s)
+10,1,B+ Tree (Sorted),Insert,0.0010085105895996094
+10,1,B+ Tree (Unsorted),Insert,0.0
+10,1,B+ Tree,Search,0.0
+10,1,B+ Tree,Range Query,0.0
+10,1,B+ Tree,Delete,0.0
+10,1,B+ Tree,Mixed,0.0
+10,1,Brute Force,Insert,0.0
+10,1,Brute Force,Search,0.0
+10,1,Brute Force,Range Query,0.0
+10,1,Brute Force,Delete,0.0
+10,1,Brute Force,Mixed,0.0
+10,2,B+ Tree (Sorted),Insert,0.0
+10,2,B+ Tree (Unsorted),Insert,0.0
+10,2,B+ Tree,Search,0.0
+10,2,B+ Tree,Range Query,0.0
+10,2,B+ Tree,Delete,0.0
+10,2,B+ Tree,Mixed,0.0
+10,2,Brute Force,Insert,0.0
+10,2,Brute Force,Search,0.0
+10,2,Brute Force,Range Query,0.0
+10,2,Brute Force,Delete,0.0020415782928466797
+10,2,Brute Force,Mixed,0.0
+10,3,B+ Tree (Sorted),Insert,0.0
+10,3,B+ Tree (Unsorted),Insert,0.0
+10,3,B+ Tree,Search,0.0
+10,3,B+ Tree,Range Query,0.0
+10,3,B+ Tree,Delete,0.0
+10,3,B+ Tree,Mixed,0.0
+10,3,Brute Force,Insert,0.0
+10,3,Brute Force,Search,0.0
+10,3,Brute Force,Range Query,0.0
+10,3,Brute Force,Delete,0.0
+10,3,Brute Force,Mixed,0.0
+15,1,B+ Tree (Sorted),Insert,0.0
+15,1,B+ Tree (Unsorted),Insert,0.0
+15,1,B+ Tree,Search,0.0
+15,1,B+ Tree,Range Query,0.0
+15,1,B+ Tree,Delete,0.0
+15,1,B+ Tree,Mixed,0.0
+15,1,Brute Force,Insert,0.0
+15,1,Brute Force,Search,0.0
+15,1,Brute Force,Range Query,0.0
+15,1,Brute Force,Delete,0.0
+15,1,Brute Force,Mixed,0.0
+15,2,B+ Tree (Sorted),Insert,0.0
+15,2,B+ Tree (Unsorted),Insert,0.0
+15,2,B+ Tree,Search,0.002614736557006836
+15,2,B+ Tree,Range Query,0.0
+15,2,B+ Tree,Delete,0.0
+15,2,B+ Tree,Mixed,0.0
+15,2,Brute Force,Insert,0.0
+15,2,Brute Force,Search,0.0
+15,2,Brute Force,Range Query,0.0
+15,2,Brute Force,Delete,0.0
+15,2,Brute Force,Mixed,0.0
+15,3,B+ Tree (Sorted),Insert,0.0030820369720458984
+15,3,B+ Tree (Unsorted),Insert,0.0
+15,3,B+ Tree,Search,0.0
+15,3,B+ Tree,Range Query,0.0
+15,3,B+ Tree,Delete,0.0020308494567871094
+15,3,B+ Tree,Mixed,0.0
+15,3,Brute Force,Insert,0.0
+15,3,Brute Force,Search,0.0
+15,3,Brute Force,Range Query,0.0
+15,3,Brute Force,Delete,0.0
+15,3,Brute Force,Mixed,0.0
+20,1,B+ Tree (Sorted),Insert,0.0
+20,1,B+ Tree (Unsorted),Insert,0.0
+20,1,B+ Tree,Search,0.0
+20,1,B+ Tree,Range Query,0.0
+20,1,B+ Tree,Delete,0.0
+20,1,B+ Tree,Mixed,0.0022585391998291016
+20,1,Brute Force,Insert,0.0
+20,1,Brute Force,Search,0.0
+20,1,Brute Force,Range Query,0.0
+20,1,Brute Force,Delete,0.0
+20,1,Brute Force,Mixed,0.0
+20,2,B+ Tree (Sorted),Insert,0.0
+20,2,B+ Tree (Unsorted),Insert,0.0
+20,2,B+ Tree,Search,0.0
+20,2,B+ Tree,Range Query,0.0
+20,2,B+ Tree,Delete,0.0
+20,2,B+ Tree,Mixed,0.0
+20,2,Brute Force,Insert,0.0
+20,2,Brute Force,Search,0.0
+20,2,Brute Force,Range Query,0.0
+20,2,Brute Force,Delete,0.0
+20,2,Brute Force,Mixed,0.0
+20,3,B+ Tree (Sorted),Insert,0.0
+20,3,B+ Tree (Unsorted),Insert,0.0
+20,3,B+ Tree,Search,0.0
+20,3,B+ Tree,Range Query,0.0
+20,3,B+ Tree,Delete,0.0020241737365722656
+20,3,B+ Tree,Mixed,0.0
+20,3,Brute Force,Insert,0.0
+20,3,Brute Force,Search,0.0
+20,3,Brute Force,Range Query,0.0
+20,3,Brute Force,Delete,0.0
+20,3,Brute Force,Mixed,0.0
+100,1,B+ Tree (Sorted),Insert,0.0
+100,1,B+ Tree (Unsorted),Insert,0.0017728805541992188
+100,1,B+ Tree,Search,0.0
+100,1,B+ Tree,Range Query,0.0
+100,1,B+ Tree,Delete,0.0
+100,1,B+ Tree,Mixed,0.002029895782470703
+100,1,Brute Force,Insert,0.0
+100,1,Brute Force,Search,0.0010318756103515625
+100,1,Brute Force,Range Query,0.0011932849884033203
+100,1,Brute Force,Delete,0.0
+100,1,Brute Force,Mixed,0.0
+100,2,B+ Tree (Sorted),Insert,0.0
+100,2,B+ Tree (Unsorted),Insert,0.0
+100,2,B+ Tree,Search,0.0
+100,2,B+ Tree,Range Query,0.0
+100,2,B+ Tree,Delete,0.0
+100,2,B+ Tree,Mixed,0.0
+100,2,Brute Force,Insert,0.0
+100,2,Brute Force,Search,0.0
+100,2,Brute Force,Range Query,0.0
+100,2,Brute Force,Delete,0.0
+100,2,Brute Force,Mixed,0.0020110607147216797
+100,3,B+ Tree (Sorted),Insert,0.0
+100,3,B+ Tree (Unsorted),Insert,0.0
+100,3,B+ Tree,Search,0.0020165443420410156
+100,3,B+ Tree,Range Query,0.0
+100,3,B+ Tree,Delete,0.0
+100,3,B+ Tree,Mixed,0.002021312713623047
+100,3,Brute Force,Insert,0.0
+100,3,Brute Force,Search,0.0
+100,3,Brute Force,Range Query,0.0
+100,3,Brute Force,Delete,0.0
+100,3,Brute Force,Mixed,0.0020203590393066406
+500,1,B+ Tree (Sorted),Insert,0.0036835670471191406
+500,1,B+ Tree (Unsorted),Insert,0.002557516098022461
+500,1,B+ Tree,Search,0.0
+500,1,B+ Tree,Range Query,0.0
+500,1,B+ Tree,Delete,0.0
+500,1,B+ Tree,Mixed,0.010499000549316406
+500,1,Brute Force,Insert,0.00891733169555664
+500,1,Brute Force,Search,0.0
+500,1,Brute Force,Range Query,0.0
+500,1,Brute Force,Delete,0.0
+500,1,Brute Force,Mixed,0.014960527420043945
+500,2,B+ Tree (Sorted),Insert,0.0
+500,2,B+ Tree (Unsorted),Insert,0.0
+500,2,B+ Tree,Search,0.0
+500,2,B+ Tree,Range Query,0.0
+500,2,B+ Tree,Delete,0.0
+500,2,B+ Tree,Mixed,0.008252143859863281
+500,2,Brute Force,Insert,0.014330387115478516
+500,2,Brute Force,Search,0.0
+500,2,Brute Force,Range Query,0.0
+500,2,Brute Force,Delete,0.0
+500,2,Brute Force,Mixed,0.014100790023803711
+500,3,B+ Tree (Sorted),Insert,0.003069162368774414
+500,3,B+ Tree (Unsorted),Insert,0.0
+500,3,B+ Tree,Search,0.0
+500,3,B+ Tree,Range Query,0.0
+500,3,B+ Tree,Delete,0.0
+500,3,B+ Tree,Mixed,0.006451845169067383
+500,3,Brute Force,Insert,0.014022588729858398
+500,3,Brute Force,Search,0.0020093917846679688
+500,3,Brute Force,Range Query,0.0
+500,3,Brute Force,Delete,0.0017600059509277344
+500,3,Brute Force,Mixed,0.024890899658203125
+1000,1,B+ Tree (Sorted),Insert,0.01258707046508789
+1000,1,B+ Tree (Unsorted),Insert,0.08054018020629883
+1000,1,B+ Tree,Search,0.0
+1000,1,B+ Tree,Range Query,0.0
+1000,1,B+ Tree,Delete,0.0
+1000,1,B+ Tree,Mixed,0.04291963577270508
+1000,1,Brute Force,Insert,0.04524850845336914
+1000,1,Brute Force,Search,0.0020189285278320312
+1000,1,Brute Force,Range Query,0.0
+1000,1,Brute Force,Delete,0.0
+1000,1,Brute Force,Mixed,0.0782158374786377
+1000,2,B+ Tree (Sorted),Insert,0.008373260498046875
+1000,2,B+ Tree (Unsorted),Insert,0.007896184921264648
+1000,2,B+ Tree,Search,0.0
+1000,2,B+ Tree,Range Query,0.0020232200622558594
+1000,2,B+ Tree,Delete,0.0
+1000,2,B+ Tree,Mixed,0.04314064979553223
+1000,2,Brute Force,Insert,0.057695627212524414
+1000,2,Brute Force,Search,0.005135774612426758
+1000,2,Brute Force,Range Query,0.0
+1000,2,Brute Force,Delete,0.0
+1000,2,Brute Force,Mixed,0.07980132102966309
+1000,3,B+ Tree (Sorted),Insert,0.005476951599121094
+1000,3,B+ Tree (Unsorted),Insert,0.0056476593017578125
+1000,3,B+ Tree,Search,0.0
+1000,3,B+ Tree,Range Query,0.0
+1000,3,B+ Tree,Delete,0.0
+1000,3,B+ Tree,Mixed,0.03257417678833008
+1000,3,Brute Force,Insert,0.05449533462524414
+1000,3,Brute Force,Search,0.0
+1000,3,Brute Force,Range Query,0.0
+1000,3,Brute Force,Delete,0.0
+1000,3,Brute Force,Mixed,0.07749772071838379

@@ -1,0 +1,145 @@
+{
+  "name": "retail_db",
+  "tables": {
+    "member": {
+      "name": "member",
+      "schema": {
+        "member_id": "int",
+        "name": "str",
+        "image": "str",
+        "age": "int",
+        "email": "str",
+        "contact_number": "str"
+      },
+      "primary_key": "member_id",
+      "rows": []
+    },
+    "shop": {
+      "name": "shop",
+      "schema": {
+        "shop_id": "str",
+        "name": "str",
+        "address": "str",
+        "contact": "str",
+        "member_id": "int"
+      },
+      "primary_key": "shop_id",
+      "rows": []
+    },
+    "customer": {
+      "name": "customer",
+      "schema": {
+        "customer_id": "str",
+        "name": "str",
+        "contact": "str",
+        "email": "str"
+      },
+      "primary_key": "customer_id",
+      "rows": []
+    },
+    "supplier": {
+      "name": "supplier",
+      "schema": {
+        "supplier_id": "str",
+        "name": "str",
+        "contact": "str",
+        "email": "str",
+        "address": "str"
+      },
+      "primary_key": "supplier_id",
+      "rows": []
+    },
+    "product": {
+      "name": "product",
+      "schema": {
+        "product_id": "int",
+        "name": "str",
+        "category": "str",
+        "supplier_id": "str",
+        "shop_id": "str",
+        "price": "float",
+        "stock_quantity": "int",
+        "stock_status": "str"
+      },
+      "primary_key": "product_id",
+      "rows": []
+    },
+    "order": {
+      "name": "order",
+      "schema": {
+        "order_id": "int",
+        "customer_id": "str",
+        "shop_id": "str",
+        "order_date": "str",
+        "total_amount": "float",
+        "status": "str"
+      },
+      "primary_key": "order_id",
+      "rows": []
+    },
+    "order_details": {
+      "name": "order_details",
+      "schema": {
+        "order_details_id": "int",
+        "order_id": "int",
+        "product_id": "int",
+        "quantity": "int",
+        "price": "float"
+      },
+      "primary_key": "order_details_id",
+      "rows": []
+    },
+    "employee": {
+      "name": "employee",
+      "schema": {
+        "employee_id": "int",
+        "name": "str",
+        "role": "str",
+        "contact": "str",
+        "shop_id": "str",
+        "salary": "float",
+        "salary_status": "str"
+      },
+      "primary_key": "employee_id",
+      "rows": []
+    },
+    "payment": {
+      "name": "payment",
+      "schema": {
+        "payment_id": "int",
+        "order_id": "int",
+        "amount": "float",
+        "method": "str",
+        "transaction_timestamp": "str"
+      },
+      "primary_key": "payment_id",
+      "rows": []
+    },
+    "attendance": {
+      "name": "attendance",
+      "schema": {
+        "employee_id": "int",
+        "attendance_date": "str",
+        "check_in": "str",
+        "check_out": "str",
+        "status": "str"
+      },
+      "primary_key": "employee_id",
+      "rows": []
+    },
+    "loyalty": {
+      "name": "loyalty",
+      "schema": {
+        "loyalty_id": "int",
+        "customer_id": "str",
+        "shop_id": "str",
+        "purchase_amount": "float",
+        "loyalty_points": "int",
+        "purchase_date": "str",
+        "points_valid_till": "str"
+      },
+      "primary_key": "loyalty_id",
+      "rows": []
+    }
+  }
+}

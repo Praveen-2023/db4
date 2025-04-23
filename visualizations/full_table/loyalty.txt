@@ -1,0 +1,5 @@
+Table: loyalty
+Primary Key: loyalty_id
+Schema: {'loyalty_id': 'int', 'customer_id': 'str', 'shop_id': 'str', 'purchase_amount': 'float', 'loyalty_points': 'int', 'purchase_date': 'str', 'points_valid_till': 'str'}
+Number of rows: 0
+

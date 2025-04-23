@@ -1,0 +1,5 @@
+Table: customer
+Primary Key: customer_id
+Schema: {'customer_id': 'str', 'name': 'str', 'contact': 'str', 'email': 'str'}
+Number of rows: 0
+

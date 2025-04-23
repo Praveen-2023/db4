@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block title %}Performance Analysis - Lightweight DBMS{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="mb-4">Performance Analysis</h1>
+        <p class="lead">
+            Comparison of B+ Tree with BruteForceDB for different operations and data sizes.
+        </p>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>Insertion Performance</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Time</h3>
+                        {% if plots.insertion_time %}
+                        <img src="data:image/png;base64,{{ plots.insertion_time }}" class="img-fluid" alt="Insertion Time">
+                        {% else %}
+                        <p>No data available</p>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Memory</h3>
+                        {% if plots.insertion_memory %}
+                        <img src="data:image/png;base64,{{ plots.insertion_memory }}" class="img-fluid" alt="Insertion Memory">
+                        {% else %}
+                        <p>No data available</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>Search Performance</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Time</h3>
+                        {% if plots.search_time %}
+                        <img src="data:image/png;base64,{{ plots.search_time }}" class="img-fluid" alt="Search Time">
+                        {% else %}
+                        <p>No data available</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>Range Query Performance</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Time</h3>
+                        {% if plots.range_query_time %}
+                        <img src="data:image/png;base64,{{ plots.range_query_time }}" class="img-fluid" alt="Range Query Time">
+                        {% else %}
+                        <p>No data available</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>Deletion Performance</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Time</h3>
+                        {% if plots.deletion_time %}
+                        <img src="data:image/png;base64,{{ plots.deletion_time }}" class="img-fluid" alt="Deletion Time">
+                        {% else %}
+                        <p>No data available</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>Random Operations Performance</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Time</h3>
+                        {% if plots.random_operations_time %}
+                        <img src="data:image/png;base64,{{ plots.random_operations_time }}" class="img-fluid" alt="Random Operations Time">
+                        {% else %}
+                        <p>No data available</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>Performance Summary</h2>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Benchmark</th>
+                                <th>Structure</th>
+                                <th>Data Size</th>
+                                <th>Time (seconds)</th>
+                                <th>Memory (MB)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for benchmark, structures in results.items() %}
+                                {% for structure, metrics in structures.items() %}
+                                    {% if 'time' in metrics %}
+                                        {% for size in metrics.time %}
+                                            <tr>
+                                                <td>{{ benchmark }}</td>
+                                                <td>{{ structure }}</td>
+                                                <td>{{ size }}</td>
+                                                <td>{{ metrics.time[size]|round(6) }}</td>
+                                                <td>{{ metrics.memory[size]|round(2) if 'memory' in metrics and size in metrics.memory else 'N/A' }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Lightweight DBMS{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="mb-4">Lightweight DBMS with B+ Tree Index</h1>
+        <p class="lead">
+            This is a lightweight database management system (DBMS) that uses B+ Tree for indexing.
+            It supports basic operations (insert, update, delete, select, aggregation, range queries) on tables.
+        </p>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>Tables</h2>
+            </div>
+            <div class="card-body">
+                {% if tables %}
+                <div class="list-group">
+                    {% for table in tables %}
+                    <a href="{{ url_for('view_table', table_name=table) }}" class="list-group-item list-group-item-action">
+                        {{ table }}
+                    </a>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p>No tables found. Please create tables first.</p>
+                <a href="{{ url_for('setup') }}" class="btn btn-primary">Setup Database</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2>Performance Analysis</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    Compare the performance of B+ Tree with BruteForceDB by measuring:
+                </p>
+                <ul>
+                    <li>Insertion Time</li>
+                    <li>Search Time</li>
+                    <li>Deletion Time</li>
+                    <li>Range Query Time</li>
+                    <li>Random Performance</li>
+                    <li>Memory Usage</li>
+                </ul>
+                <a href="{{ url_for('performance') }}" class="btn btn-primary">View Performance Analysis</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2>Visualization</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    Visualize the B+ Tree structure:
+                </p>
+                <ul>
+                    <li>Tree Structure</li>
+                    <li>Node Relationships</li>
+                    <li>Leaf Node Linkage</li>
+                </ul>
+                <a href="{{ url_for('visualize') }}" class="btn btn-primary">Visualize B+ Tree</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

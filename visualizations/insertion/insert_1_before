@@ -1,0 +1,4 @@
+// B+ Tree
+digraph {
+	0 [label="Leaf | "]
+}

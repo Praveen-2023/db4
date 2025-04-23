@@ -1,0 +1,5 @@
+Table: member
+Primary Key: member_id
+Schema: {'member_id': 'int', 'name': 'str', 'image': 'str', 'age': 'int', 'email': 'str', 'contact_number': 'str'}
+Number of rows: 0
+

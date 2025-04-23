@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}Setup - Lightweight DBMS{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="mb-4">Setup Database</h1>
+        <p class="lead">
+            Initialize the database by creating tables and inserting sample data.
+        </p>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2>Create Tables</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    Create the following tables:
+                </p>
+                <ul>
+                    <li>Member</li>
+                    <li>Shop</li>
+                    <li>Customer</li>
+                    <li>Supplier</li>
+                    <li>Product</li>
+                    <li>Order</li>
+                    <li>Order Details</li>
+                    <li>Employee</li>
+                    <li>Payment</li>
+                    <li>Attendance</li>
+                    <li>Loyalty</li>
+                </ul>
+                <button id="create-tables-btn" class="btn btn-primary">Create Tables</button>
+                <div id="create-tables-result" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2>Insert Sample Data</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    Insert sample data into the tables:
+                </p>
+                <ul>
+                    <li>3 Members</li>
+                    <li>3 Shops</li>
+                    <li>3 Customers</li>
+                    <li>3 Suppliers</li>
+                    <li>4 Products</li>
+                    <li>3 Orders</li>
+                    <li>4 Order Details</li>
+                </ul>
+                <button id="insert-data-btn" class="btn btn-primary">Insert Sample Data</button>
+                <div id="insert-data-result" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.getElementById('create-tables-btn').addEventListener('click', function() {
+        fetch('/create_tables', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const resultDiv = document.getElementById('create-tables-result');
+            if (data.success) {
+                resultDiv.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+            } else {
+                resultDiv.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('create-tables-result').innerHTML = `<div class="alert alert-danger">An error occurred: ${error}</div>`;
+        });
+    });
+
+    document.getElementById('insert-data-btn').addEventListener('click', function() {
+        fetch('/insert_sample_data', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const resultDiv = document.getElementById('insert-data-result');
+            if (data.success) {
+                resultDiv.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+            } else {
+                resultDiv.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('insert-data-result').innerHTML = `<div class="alert alert-danger">An error occurred: ${error}</div>`;
+        });
+    });
+</script>
+{% endblock %}

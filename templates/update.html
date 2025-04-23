@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Update Row - {{ table_name }} - Lightweight DBMS{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="mb-4">Update Row - {{ table_name }}</h1>
+        <div class="mb-3">
+            <a href="{{ url_for('view_table', table_name=table_name) }}" class="btn btn-secondary">Back to Table</a>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>Update Form</h2>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    {% for column, column_type in schema.items() %}
+                    <div class="mb-3">
+                        <label for="{{ column }}" class="form-label">{{ column }} ({{ column_type }})</label>
+                        <input type="{% if column_type == 'int' %}number{% elif column_type == 'float' %}number{% else %}text{% endif %}" 
+                               class="form-control" 
+                               id="{{ column }}" 
+                               name="{{ column }}" 
+                               value="{{ row[column] }}"
+                               {% if column_type == 'float' %}step="0.01"{% endif %}
+                               {% if column == primary_key %}readonly{% endif %}
+                               required>
+                    </div>
+                    {% endfor %}
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

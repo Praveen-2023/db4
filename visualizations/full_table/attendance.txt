@@ -1,0 +1,5 @@
+Table: attendance
+Primary Key: employee_id
+Schema: {'employee_id': 'int', 'attendance_date': 'str', 'check_in': 'str', 'check_out': 'str', 'status': 'str'}
+Number of rows: 0
+
